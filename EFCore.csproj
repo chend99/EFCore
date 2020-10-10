@@ -1,0 +1,47 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20201010031705_1.cs" />
+    <Compile Remove="Migrations\20201010031705_1.Designer.cs" />
+    <Compile Remove="Migrations\20201010032035_2.cs" />
+    <Compile Remove="Migrations\20201010032035_2.Designer.cs" />
+    <Compile Remove="Migrations\20201010032307_1.cs" />
+    <Compile Remove="Migrations\20201010032307_1.Designer.cs" />
+    <Compile Remove="Migrations\20201010035159_prueba.cs" />
+    <Compile Remove="Migrations\20201010035159_prueba.Designer.cs" />
+    <Compile Remove="Migrations\20201010035636_Inicial.cs" />
+    <Compile Remove="Migrations\20201010035636_Inicial.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="efc.db" />
+    <None Remove="efcdatabase.db" />
+    <None Remove="efcdatabase2.db" />
+    <None Remove="efcdatabase3.db" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="efc.db">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.8">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.1.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.8">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+</Project>
